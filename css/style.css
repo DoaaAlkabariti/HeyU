@@ -1,0 +1,344 @@
+body{
+    font-family: 'Lato', sans-serif;
+    direction: ltr;
+    color: #363636;
+}
+/**************************************   properities of search & nackToTop section  ************************/
+#searchModal .modal-body{
+  background: none;
+  border:0px;
+}
+.searchInput{
+  border-radius: 50px;
+  height: 65px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+#backToTop{
+  background: linear-gradient(to bottom , #d90646 , #eb3f2d);
+  position: fixed;
+  right: 30px;
+  bottom:30px;
+  color:white;
+  text-align: center;
+  height: 50px;
+  width:50px;
+  border-radius: 8px;
+  z-index: 1;
+  border:1px solid white;
+  font-size: 20px;
+  transition-duration: .4s;
+  opacity: 0.5;
+  line-height: 48px;
+
+}
+#backToTop:hover{
+  transition-duration: .4s;
+  opacity: 1;
+  line-height:40px;
+}
+#backToTop.visible{
+  display: inline-block;
+}
+/**************************************   properities of navbar section  ************************************/
+.navbar.bg-light{
+    background:rgba(0,0,0,0) !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    cursor: pointer;
+    color:white;
+    font-size: 18px;
+    padding-right:30px;
+    padding-left: 30px;
+}
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.navActive{
+    color:white;
+    text-decoration: underline;
+}
+/**************************************   properities of main section  *************************************/
+.mainSection{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 980px;
+    position: relative;
+}
+.mainSection h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+.mainSection span{
+    display: block;
+    font-size: 18px;
+}
+.mainSection a.btn-primary{
+    color: #e42837;
+    background: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 15px 55px;
+    font-size: 18px;
+    margin-top: 100px;
+}
+.mainSection a.btn-primary:hover{
+    color: white;
+    background: transparent;
+}
+.mainSection .container,
+.mainSection .row{
+    height: 100%;
+}
+.absoluteBg{
+    position: absolute;
+    width: 100%;
+    height: 980px;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to bottom , #d90646 , #eb3f2d);
+    -webkit-clip-path: polygon( 100% 0, 100% 75%, 0 90%, 0 0%);
+    clip-path: polygon(100% 0, 100% 75%, 0 90%, 0 0%);
+}
+/**************************************   properities of features section  ***********************************/
+.section h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+.featuresDesc h2 .red{
+    color: #e01c3d;
+}
+.featuresDesc p{
+    color: #808080;
+    font-size: 18px;
+}
+.navbar.scrollNav{
+    background: rgba(0,0,0,0.4) !important;
+}
+/**************************************   properities of testmonials section  *********************************/
+.section.testmonials {
+    padding: 95px 0px;
+}
+.section.testmonials h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 135px;
+}
+.section h2 span {
+    color: #eb3f2d;
+}
+.section.boardered{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 120px;
+}
+.speechBubble{
+    position: relative;
+    border:1px solid #e0e0e0;
+    width: 100%;
+    height: auto;
+    max-height: 210px;
+    padding: 30px;
+    transition-duration: 0.4s;
+}
+.speechBubble p {
+    color: #808080;
+    font-style: italic;
+    height: auto;
+    max-height: 115px;
+    overflow: hidden;
+}
+.speechBubble span.red{
+    color: #eb3f2d;
+    font-weight: bold;
+}
+.triangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 8px solid #e0e0e0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    bottom: -8px;
+    left: 20px;
+}
+.innerTriangle{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 7px solid #ffffff;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    bottom: 1px;
+    left: -7px;
+}
+.testmonialDesc{
+    width:100%;
+    height: auto;
+    margin-top:20px;
+    transition-duration: 0.4s;
+}
+.testmonialImg{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+.testmonialImg img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.testmonialText{
+    padding-left: 15px;
+}
+.testmonialText span{
+    display: block;
+    font-size: 18px;
+}
+.testmonialText span.position{
+    color: #667386;
+    font-size: 16px;
+}
+.testmonialItem:hover > .speechBubble{
+    transition-duration: 0.4s;
+    margin-top:-20px;
+    border-color: transparent;
+    -webkit-box-shadow: 0px 10px 19px 5px rgba(0,0,0,0.21);
+    -moz-box-shadow: 0px 10px 19px 5px rgba(0,0,0,0.21);
+    box-shadow: 0px 10px 19px 5px rgba(0,0,0,0.21);
+}
+.testmonialItem:hover > .testmonialDesc{
+    margin-top:40px;
+    transition-duration: 0.4s;
+}
+/**************************************   properities of red section  *********************************************/
+.redSection{
+  width:100%;
+  height: 520px;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  background: linear-gradient(to bottom , #d90646 , #eb3f2d);
+  /* position: relative; */
+}
+.redSection .container,
+.redSection .row{
+  height: 100%;
+}
+.rtl{
+  direction:rtl;
+}
+.media span i{
+  color: white;
+  font-size: 45px;
+}
+.media h5{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+}
+.media p{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: right;
+}
+ .phone{
+  /* position:absolute; */
+  top:-140px;
+}
+.rtl h5,
+.rtl p{
+  text-align:right;
+}
+/**************************************   properities of subScription section  ******************************************/
+.subScription{
+  border-bottom: 1px solid #dfdfdf;
+  padding: 95px 0px;
+}
+.section.subScription h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 135px;
+}
+.section h2 span {
+    color: #eb3f2d;
+}
+.section.subScription p{
+  width: 100%;
+  text-align: center;
+  margin-top: -110px;
+  color:#dfdfdf;
+}
+.form-group{
+  position: relative;
+  padding: 40px 100px;
+}
+.form-control{
+  border-radius: 50px;
+}
+.buttonFieled{
+  background: linear-gradient(to bottom , #d90646 , #eb3f2d);
+  position: absolute;
+  border: 0px;
+  outline: none;
+  border-radius: 50px;
+  padding:6px 15px;
+  top:41px;
+  right:40px;
+  color: white;
+}
+/**************************************   properities of Download section  *********************************************/
+.download{
+  text-align: center;
+  border-bottom: 1px solid #dfdfdf;
+  padding: 95px 0px;
+  padding: 95px 0px;
+}
+.section.download h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 135px;
+}
+.section.download p{
+  width: 100%;
+  text-align: center;
+  margin-top: -110px;
+  color:#dfdfdf;
+}
+.imag{
+  text-align: center;
+}
+/**************************************  properities of footer section  *********************************************/
+.footer{
+  padding-top:30px;
+  padding-bottom: 20px;
+}
+.footer a{
+    color: #686868;
+}
+.option{
+  border-radius:40px;
+  background: #f8f8f8;
+  text-align:right;
+}
+.custom-select{
+  border-radius:10px;
+  background: #f8f8f8;
+  text-align:right;
+}
+/***************************************** Media queries **************************************************************/
+@media (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+    }
+}
+@media (max-width :992px){
+    .featuresImg{
+        text-align: center;
+    }
+    .mainSection h1{
+        font-size: 50px;
+    }
+    .featuresDesc{
+        text-align: center;
+    }
+}
